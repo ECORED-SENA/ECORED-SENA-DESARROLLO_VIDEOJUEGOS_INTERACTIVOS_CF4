@@ -1,1 +1,1 @@
-module.exports = 'NOMBRE DEL COMPONENTE FORMATIVO'
+module.exports = 'Integración de <em>assetts</em>'

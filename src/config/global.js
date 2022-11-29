@@ -1,17 +1,14 @@
 export default {
   global: {
-    componenteFormativo: 'NOMBRE DEL COMPONENTE FORMATIVO',
-    descripcionCurso: 'BREVE DESCRIPCIÓN',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
+    componenteFormativo: 'Integración de <em>assetts</em>',
+    descripcionCurso:
+      'Explicación pasos de descarga, instalación, importación de assets y elementos en <em>Unity 3D</em>.',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
         imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.svg'),
-      },
-      {
-        clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
       },
     ],
   },
@@ -32,14 +29,26 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Interfaz y flujo de integración de <em>Unity 3D</em>',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
+            titulo: 'Instalación de <em>Unity 3D</em>',
             hash: 't_1_1',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.2',
+            titulo: 'Navegación en <em>Unity 3D</em>',
+            hash: 't_1_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.3',
+            titulo: 'Escenario y ventanas de <em>Unity 3D</em>',
+            hash: 't_1_3',
           },
         ],
       },
@@ -48,14 +57,70 @@ export default {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
         numero: '2',
-        titulo: 'Titulo de primer nivel',
+        titulo: '<em>Unity 3D</em> importar elementos 3D - <em>assets</em>',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema3',
         icono: 'far fa-file-alt',
         numero: '3',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Componer los escenarios (personajes, <em>props</em>, fondos) ',
+        desarrolloContenidos: true,
+      },
+      {
+        nombreRuta: 'tema4',
+        icono: 'far fa-file-alt',
+        numero: '4',
+        titulo: 'Iluminación',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            icono: 'far fa-file-alt',
+            numero: '4.1',
+            titulo: 'Iluminación de escenarios',
+            hash: 't_4_1',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '4.2',
+            titulo: 'Luces en <em>Unity 3D</em>',
+            hash: 't_4_2',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema7',
+        icono: 'far fa-file-alt',
+        numero: '7',
+        titulo: 'Interfaz',
+        desarrolloContenidos: true,
+        subMenu: [
+          {
+            icono: 'far fa-file-alt',
+            numero: '7.1',
+            titulo: 'Interfaz del videojuego',
+            hash: 't_7_1',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '7.2',
+            titulo: 'Diseño de interfaz del videojuego',
+            hash: 't_7_2',
+          },
+        ],
+      },
+      {
+        nombreRuta: 'tema5',
+        icono: 'far fa-file-alt',
+        numero: '5',
+        titulo: 'Cámaras',
+        desarrolloContenidos: true,
+      },
+      {
+        nombreRuta: 'tema6',
+        icono: 'far fa-file-alt',
+        numero: '6',
+        titulo: 'Efectos visuales',
         desarrolloContenidos: true,
       },
     ],
