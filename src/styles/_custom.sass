@@ -28,6 +28,15 @@
 .fondo
   &-1
     background-color: #C0EBF6
+  &-2
+    background-color: #DEE4F0
+  &-3
+    background-image: url('../assets/curso/tema2/fondo1.svg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: left
+    border-top-right-radius: 7px
+    border-bottom-right-radius: 7px
 
 //-bloque de texto
 .bloque-texto-b.fondo-bloque:before
@@ -45,3 +54,43 @@
 //Fuentes
 .fuente-link
   color: #0b0ff0
+
+//acordeon
+.tarjeta.tarjeta--gris.acordion__activo
+  background-color: #E8E8E8 !important
+
+// cajón
+.cajon.color-primario.fondo-cajon
+  background-color: rgba(4, 177, 217, 0.25)
+
+.cajon.color-primario.fondo-cajon1
+  background-color:#C0EBF6
+
+//listas
+.fa-cube:before
+  content: "\f1b2"
+  color: #210BB7
+
+// cambiar orientación de bloque
+.bloque-texto-g__img.cambioimg
+  width: 50%
+  position: absolute
+  top: 0
+  left: 50%
+  bottom: 0
+  background-position: center
+  background-size: cover
+  @media (max-width: 991px)
+    width: 100%
+    top: 0
+    left: 0
+
+.bloque-texto-g__texto.cambiotexto
+  position: relative
+  width: 70%
+  background-color: rgba(255, 255, 255, 0.95)
+  left: -30%
+  @media (max-width: 991px)
+    position: relative
+    width: 100%
+    left: 0

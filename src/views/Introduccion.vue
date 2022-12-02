@@ -8,7 +8,8 @@
         span
           i.fas.fa-info
       h1 Introducción
-    img(data-aos="fade-down-right")(src='@/assets/curso/intro/imagen.png')
+    .div(data-aos="fade-down-right")
+      img(src='@/assets/curso/intro/imagen.png')
     .bloque-texto-b.fondo-bloque.p-4.my-5(data-aos="fade-down-right")
       .bloque-texto-b__texto
         p En este componente se explicará la interfaz de Unity, su instalación, navegación y las ventanas que serán de importancia para el desarrollo de proyectos de videojuegos. También encontrará información sobre la  importación de objetos 3D, desde blender e integración de Asset Store de Unity y cómo componer escenarios propios. 

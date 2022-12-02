@@ -1,1 +1,1 @@
-module.exports = 'Integración de <em>assetts</em>'
+module.exports = 'Integración de assetts'

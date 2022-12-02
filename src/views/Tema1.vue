@@ -15,7 +15,7 @@
       a.mb-4(:href="('https://unity.com/es')" target="_blank") 
         span.fuente-link https://unity.com/es
     .row.justify-content-center(data-aos="fade-down-right")
-      .col-10
+      .col-lg-10.col-11
         .tarjeta.fondo-1.p-3.mb-5
           .row.justify-content-center.align-items-center
             .col-3.col-sm-2.col-lg-1
@@ -37,10 +37,131 @@
     .titulo-sexto.color-acento-contenido(data-aos="fade-down-right")
       h5 Figura 1. 
       span Interfaz <em>Unity</em>.
-    figure.mb-5
+    figure.mb-5(data-aos="fade-down-right")
       img(src='@/assets/curso/tema1/imagen2.png', alt='Interfaz')
       figcaption  Nota. Pantalla principal proyecto <em>Unity</em>.
-    p.mb-5 Además, puede configurar la interfaz de Unity 3D según la necesidad requerida a través de las siguientes opciones:
+    p.mb-5(data-aos="fade-down-left") Además, puede configurar la interfaz de Unity 3D según la necesidad requerida a través de las siguientes opciones:
+    AcordionA(data-aos="fade-down-right").mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris")
+      .row.justify-content-around(titulo="<em>Game</em>")
+        .col-md-5.mb-4.mb-md-0
+          p En esta pestaña se ve el juego funcionando, para probarlo y verlo en ejecución se debe dar clic en el botón <em>play</em>. Cuando este botón está resaltado en azul indica que el juego está activo, tal como se muestra en la siguiente figura.
+          a.boton.me-3.indicador__container.my-4(
+            :href="obtenerLink('downloads/prueba.pdf')"
+            target="_blank"
+            type="application/pdf"
+            @mouseover="mostrarIndicador = false"
+          )
+            span Ampliar imagen
+            i.fas.fa-magnifying
+            .indicador--click(v-if="mostrarIndicador")
+        .col-md-5
+          figure
+            img(src='@/assets/curso/tema1/imagen3.png')
+          .div.fondo-2.p-2
+            p.text-small.mb-0 Nota. Ejecución juego. 
+      .row.justify-content-around(titulo="<em>Scene</em>")
+        .col-md-5.mb-4.mb-md-0
+          p Pestaña que permite configurar el escenario del videojuego, donde van a ir ubicados los elementos del mismo. Dichos elementos estarán listados en la pestaña de la izquierda llamada <em>hierarchy. Unity</em> por defecto ubica dos elementos, cámara (<em>Main Camera</em>) e iluminación (<em>Directional Light</em>) como se muestra en la siguiente figura.
+          a.boton.me-3.indicador__container.my-4(
+            :href="obtenerLink('downloads/prueba.pdf')"
+            target="_blank"
+            type="application/pdf"
+            @mouseover="mostrarIndicador = false"
+          )
+            span Ampliar imagen
+            i.fas.fa-magnifying
+            .indicador--click(v-if="mostrarIndicador")
+        .col-md-5
+          figure
+            img(src='@/assets/curso/tema1/imagen4.png')
+          .div.fondo-2.p-2
+            p.text-small.mb-0 Nota. Opciones pestaña <em>Scene</em>.
+      .row.justify-content-around(titulo="Inspector")
+        .col-md-11.mb-4.mb-md-0
+          p En la parte inferior izquierda se encuentra la pestaña <em>Project</em>, que es de suma importancia, pues allí se agregarán archivos externos a <em>Unity</em> como sonidos, texturas, imágenes, entre otros; los cuales pueden anexarse simplemente arrastrándolos, dando clic en la pestaña <em>assets</em> – crear como se muestra en la siguiente figura.
+        .row.justify-content-around
+          .col-md-5
+            figure
+              img(src='@/assets/curso/tema1/imagen5.png')
+            .div.fondo-2.p-2
+              p.text-small.mb-0 Nota. Pestaña Inspector. 
+          .col-md-5
+            figure
+              img(src='@/assets/curso/tema1/imagen6.png')
+            .div.fondo-2.p-2
+              p.text-small.mb-0 Nota. Opciones Inspector.
+      .row.justify-content-around(titulo="<em>Project</em>")
+        .col-md-11.mb-4.mb-md-0
+          p Pestaña que permite configurar el escenario del videojuego, donde van a ir ubicados los elementos del mismo. Dichos elementos estarán listados en la pestaña de la izquierda llamada <em>hierarchy. Unity</em> por defecto ubica dos elementos, cámara (<em>Main Camera</em>) e iluminación (<em>Directional Light</em>) como se muestra en la siguiente figura.
+        .row.justify-content-around
+          .col-md-5
+            figure
+              img(src='@/assets/curso/tema1/imagen7.png')
+            .div.fondo-2.p-2
+              p.text-small.mb-0 Nota. Opciones pestaña <em>Project</em>.
+          .col-md-5
+            figure
+              img(src='@/assets/curso/tema1/imagen8.png')
+            .div.fondo-2.p-2
+              p.text-small.mb-0 Nota. Opciones pestaña <em>Project - Create</em>.
+    Separador
+    #t_1_3.titulo-segundo.color-acento-contenido(data-aos="fade-down-right")
+      h2 1.3 Escenario y ventanas de <em>Unity 3D</em>
+    p.mb-5(data-aos="fade-down-right") Se puede modificar la vista y tamaño de la escena por medio de las siguientes alternativas:
+    AcordionA(data-aos="fade-down-right").mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris")
+      .row.justify-content-around(titulo="Tamaño escena")
+        .col-md-5.mb-4.mb-md-0
+          p La ventana y vista de la escena se puede ampliar arrastrándola a partir de sus bordes, como se identifica en la siguiente figura.
+          p En el escenario hay 3 ejes, alto, ancho y profundidad, que se indican en la parte superior derecha con las letras X, Y, Z. 
+          p Al dar clic derecho con el mouse se puede rotar la vista, además de que si se mantiene oprimido y se presiona las teclas WASD se podrá mover por el escenario como si se tratase de un videojuego en primera persona.
+          a.boton.me-3.indicador__container.my-4(
+            :href="obtenerLink('downloads/prueba.pdf')"
+            target="_blank"
+            type="application/pdf"
+            @mouseover="mostrarIndicador = false"
+          )
+            span Ampliar imagen
+            i.fas.fa-magnifying
+            .indicador--click(v-if="mostrarIndicador")
+        .col-md-5
+          figure
+            img(src='@/assets/curso/tema1/imagen9.png')
+          .div.fondo-2.p-2
+            p.text-small.mb-0 Nota. Identificación bordes cambio de tamaño escena.
+      .row.justify-content-around(titulo="<em>Zoom</em>")
+        .col-md-5.mb-4.mb-md-0
+          p Al girar la rueda del mouse se puede hacer zoom o acercamiento, al presionarla y mantenerla oprimida, el cursor toma forma de mano, lo que permite mover la vista del escenario, como se puede ver en la siguiente figura.
+          a.boton.me-3.indicador__container.my-4(
+            :href="obtenerLink('downloads/prueba.pdf')"
+            target="_blank"
+            type="application/pdf"
+            @mouseover="mostrarIndicador = false"
+          )
+            span Ampliar imagen
+            i.fas.fa-magnifying
+            .indicador--click(v-if="mostrarIndicador")
+        .col-md-5
+          figure
+            img(src='@/assets/curso/tema1/imagen10.png')
+          .div.fondo-2.p-2
+            p.text-small.mb-0 Nota. Movimiento escenario - <em>zoom</em>.
+      .row.justify-content-around(titulo="Vista")
+        .col-md-5.mb-4.mb-md-0
+          p Si se mantiene la tecla alt + clic izquierdo se puede girar la vista en torno al punto central de la misma, como se muestra en la siguiente figura.
+          a.boton.me-3.indicador__container.my-4(
+            :href="obtenerLink('downloads/prueba.pdf')"
+            target="_blank"
+            type="application/pdf"
+            @mouseover="mostrarIndicador = false"
+          )
+            span Ampliar imagen
+            i.fas.fa-magnifying
+            .indicador--click(v-if="mostrarIndicador")
+        .col-md-5
+          figure
+            img(src='@/assets/curso/tema1/imagen11.png')
+          .div.fondo-2.p-2
+            p.text-small.mb-0 Nota. Movimiento escenario - vista. 
 </template>
 
 <script>
