@@ -45,9 +45,16 @@
           p.mb-4 Los pasos anteriores crearán un rectángulo transparente, el cual es el canvas de la UI, así por ende este es el espacio donde se van a poner los elementos, luego se crea el botón desde <em>GameObjects – UI</em> – Boton
           .row
             .col-sm-auto
-              a.boton.color-acento-botones(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
                 span Ampliar imagen
-                i.fas.fa-file-download
+                i.fas.fa-magnifying-glass
+                .indicador--click(v-if="mostrarIndicador")
+              ModalA(:abrir-modal.sync="modal1")
+                .row.align-items-center
+                  .col-md-12.mb-4.mb-md-0
+                    figure
+                      img(src='@/assets/curso/tema7/imagen3.jpg')
+                      figcaption Nota. Ejemplo creación interfaz.
         .col-lg-5.mb-5
           figure
             img(src='@/assets/curso/tema7/imagen3.jpg')
@@ -57,21 +64,35 @@
           p.mb-4 El canva en render mode se asigna a world space para que la interfaz aparezca siempre delante de los objetos que están en escena, como se muestra en la siguiente figura.
           .row
             .col-sm-auto
-              a.boton.color-acento-botones(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
                 span Ampliar imagen
-                i.fas.fa-file-download
+                i.fas.fa-magnifying-glass
+                .indicador--click(v-if="mostrarIndicador")
+              ModalA(:abrir-modal.sync="modal1")
+                .row.align-items-center
+                  .col-md-12.mb-4.mb-md-0
+                    figure
+                      img(src='@/assets/curso/tema7/imagen4.jpg')
+                      figcaption Nota. Ejemplo creación interfaz – <i>render mode</i>.
         .col-lg-5.mb-5
           figure
             img(src='@/assets/curso/tema7/imagen4.jpg')
-            figcaption Nota. Ejemplo creación interfaz – render mode.
+            figcaption Nota. Ejemplo creación interfaz – <i>render mode</i>.
       .row.justify-content-around(titulo="Paso 3: texto botón")
         .col-lg-6.mb-4.mb-lg-0
           p.mb-4 Seleccionando en hierachi el elemento botón, se selecciona el Inspector y se agrega el texto que se quiere que aparezca en el botón, en este caso será el de comenzar juego, como se muestra a continuación:
           .row
             .col-sm-auto
-              a.boton.color-acento-botones(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
                 span Ampliar imagen
-                i.fas.fa-file-download
+                i.fas.fa-magnifying-glass
+                .indicador--click(v-if="mostrarIndicador")
+              ModalA(:abrir-modal.sync="modal1")
+                .row.align-items-center
+                  .col-md-12.mb-4.mb-md-0
+                    figure
+                      img(src='@/assets/curso/tema7/imagen5.jpg')
+                      figcaption Nota. Ejemplo creación interfaz – texto botón.
         .col-lg-5.mb-5
           figure
             img(src='@/assets/curso/tema7/imagen5.jpg')
@@ -81,9 +102,16 @@
           p.mb-4 Para poner una barra de vida se crea el objeto <em>Slider</em> accediendo a la barra de menú principal <em>GameObject - UI - Slider</em>. Una vez puesto y seleccionado aparecerá una barra <em>Slider</em>, se despliega y tendrá <em>background</em>, luego se selecciona el Inspector, se da clic en <em>image – color</em> y se asigna rojo, como se muestra en la siguiente figura.
           .row
             .col-sm-auto
-              a.boton.color-acento-botones(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
                 span Ampliar imagen
-                i.fas.fa-file-download
+                i.fas.fa-magnifying-glass
+                .indicador--click(v-if="mostrarIndicador")
+              ModalA(:abrir-modal.sync="modal1")
+                .row.align-items-center
+                  .col-md-12.mb-4.mb-md-0
+                    figure
+                      img(src='@/assets/curso/tema7/imagen6.jpg')
+                      figcaption  Nota. Ejemplo creación interfaz – barra vida.
         .col-lg-5.mb-5
           figure
             img(src='@/assets/curso/tema7/imagen6.jpg')
@@ -93,9 +121,16 @@
           p.mb-4 Luego, en el Slider se despliega <em>fill area – fill</em> y se cambia el color a verde para mostrar la barra de vida cuando está llena, como se muestra en la siguiente figura.
           .row
             .col-sm-auto
-              a.boton.color-acento-botones(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
                 span Ampliar imagen
-                i.fas.fa-file-download
+                i.fas.fa-magnifying-glass
+                .indicador--click(v-if="mostrarIndicador")
+              ModalA(:abrir-modal.sync="modal1")
+                .row.align-items-center
+                  .col-md-12.mb-4.mb-md-0
+                    figure
+                      img(src='@/assets/curso/tema7/imagen7.jpg')
+                      figcaption  Nota. Ejemplo creación interfaz – <em>fill</em> área.                    
         .col-lg-5.mb-5
           figure
             img(src='@/assets/curso/tema7/imagen7.jpg')
@@ -105,33 +140,54 @@
           p.mb-4 Ahora, en la tercera opción <em>handle</em> slide area se despliega y en <em>handle</em> se agrega un icono en file <em>source</em> para la barra de vida, como se muestra a continuación:
           .row
             .col-sm-auto
-              a.boton.color-acento-botones(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
                 span Ampliar imagen
-                i.fas.fa-file-download
+                i.fas.fa-magnifying-glass
+                .indicador--click(v-if="mostrarIndicador")
+              ModalA(:abrir-modal.sync="modal1")
+                .row.align-items-center
+                  .col-md-12.mb-4.mb-md-0
+                    figure
+                      img(src='@/assets/curso/tema7/imagen8.jpg')
+                      figcaption Nota. Ejemplo creación interfaz – <i>handle slide</i> área.
         .col-lg-5.mb-5
           figure
             img(src='@/assets/curso/tema7/imagen8.jpg')
-            figcaption Nota. Ejemplo creación interfaz – handle slide área.
+            figcaption Nota. Ejemplo creación interfaz – <i>handle slide</i> área.
       .row.justify-content-around(titulo="Paso 7: <em>Slider - value</em>")
         .col-lg-6.mb-4.mb-lg-0
           p.mb-4 Ahora para ver el <em>Slider</em> en funcionamiento se puede volver a <em>Slider</em> y en Inspector aumentar el valor para ver cómo se va llenando la barra de vida, como se muestra a continuación:
           .row
             .col-sm-auto
-              a.boton.color-acento-botones(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
                 span Ampliar imagen
-                i.fas.fa-file-download
+                i.fas.fa-magnifying-glass
+                .indicador--click(v-if="mostrarIndicador")
+              ModalA(:abrir-modal.sync="modal1")
+                .row.align-items-center
+                  .col-md-12.mb-4.mb-md-0
+                    figure
+                      img(src='@/assets/curso/tema7/imagen9.jpg')
+                      figcaption Nota. Ejemplo creación interfaz – <i>slider</i>.
         .col-lg-5.mb-5
           figure
             img(src='@/assets/curso/tema7/imagen9.jpg')
-            figcaption Nota. Ejemplo creación interfaz – slider.
+            figcaption Nota. Ejemplo creación interfaz – <i>slider</i>.
       .row.justify-content-around(titulo="Paso 8: título")
         .col-lg-6.mb-4.mb-lg-0
           p.mb-4 Finalmente, se va a <em>GameObject – UI - Text</em> para crear el título que acompañará la interfaz, como lo muestra la figura a continuación:
           .row
             .col-sm-auto
-              a.boton.color-acento-botones(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
                 span Ampliar imagen
-                i.fas.fa-file-download
+                i.fas.fa-magnifying-glass
+                .indicador--click(v-if="mostrarIndicador")
+              ModalA(:abrir-modal.sync="modal1")
+                .row.align-items-center
+                  .col-md-12.mb-4.mb-md-0
+                    figure
+                      img(src='@/assets/curso/tema7/imagen10.jpg')
+                      figcaption Nota. Ejemplo creación interfaz – título.
         .col-lg-5.mb-5
           figure
             img(src='@/assets/curso/tema7/imagen10.jpg')
@@ -141,9 +197,16 @@
           p.mb-4 Con esto se tienen listos los elementos de la interfaz para iniciar el juego, como se ilustra en la siguiente figura:
           .row
             .col-sm-auto
-              a.boton.color-acento-botones(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
                 span Ampliar imagen
-                i.fas.fa-file-download
+                i.fas.fa-magnifying-glass
+                .indicador--click(v-if="mostrarIndicador")
+              ModalA(:abrir-modal.sync="modal1")
+                .row.align-items-center
+                  .col-md-12.mb-4.mb-md-0
+                    figure
+                      img(src='@/assets/curso/tema7/imagen11.jpg')
+                      figcaption Nota. Ejemplo creación interfaz – elementos agregados.
         .col-lg-5.mb-5
           figure
             img(src='@/assets/curso/tema7/imagen11.jpg')
@@ -156,6 +219,7 @@ export default {
   name: 'Tema7',
   data: () => ({
     // variables de vue
+    modal1: false,
   }),
   mounted() {
     this.$nextTick(() => {

@@ -45,15 +45,18 @@
       .row.justify-content-around(titulo="<em>Game</em>")
         .col-md-5.mb-4.mb-md-0
           p En esta pestaña se ve el juego funcionando, para probarlo y verlo en ejecución se debe dar clic en el botón <em>play</em>. Cuando este botón está resaltado en azul indica que el juego está activo, tal como se muestra en la siguiente figura.
-          a.boton.me-3.indicador__container.my-4(
-            :href="obtenerLink('downloads/prueba.pdf')"
-            target="_blank"
-            type="application/pdf"
-            @mouseover="mostrarIndicador = false"
-          )
+          a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
             span Ampliar imagen
-            i.fas.fa-magnifying
+            i.fal.fa-magnifying-glass
             .indicador--click(v-if="mostrarIndicador")
+          ModalA(:abrir-modal.sync="modal1")
+            .row.align-items-center
+              .col-md-12.mb-4.mb-md-0
+                figure
+                  img(src='@/assets/curso/tema1/imagen3.png')
+                .div.fondo-2.p-2
+                  p.text-small.mb-0 Nota. Ejecución juego. 
+
         .col-md-5
           figure
             img(src='@/assets/curso/tema1/imagen3.png')
@@ -62,15 +65,17 @@
       .row.justify-content-around(titulo="<em>Scene</em>")
         .col-md-5.mb-4.mb-md-0
           p Pestaña que permite configurar el escenario del videojuego, donde van a ir ubicados los elementos del mismo. Dichos elementos estarán listados en la pestaña de la izquierda llamada <em>hierarchy. Unity</em> por defecto ubica dos elementos, cámara (<em>Main Camera</em>) e iluminación (<em>Directional Light</em>) como se muestra en la siguiente figura.
-          a.boton.me-3.indicador__container.my-4(
-            :href="obtenerLink('downloads/prueba.pdf')"
-            target="_blank"
-            type="application/pdf"
-            @mouseover="mostrarIndicador = false"
-          )
+          a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
             span Ampliar imagen
-            i.fas.fa-magnifying
+            i.fas.fa-magnifying-glass
             .indicador--click(v-if="mostrarIndicador")
+          ModalA(:abrir-modal.sync="modal1")
+            .row.align-items-center
+              .col-md-12.mb-4.mb-md-0
+                figure
+                  img(src='@/assets/curso/tema1/imagen4.png')
+                .div.fondo-2.p-2
+                  p.text-small.mb-0 Nota. Opciones pestaña <em>Scene</em>.
         .col-md-5
           figure
             img(src='@/assets/curso/tema1/imagen4.png')
@@ -114,15 +119,17 @@
           p La ventana y vista de la escena se puede ampliar arrastrándola a partir de sus bordes, como se identifica en la siguiente figura.
           p En el escenario hay 3 ejes, alto, ancho y profundidad, que se indican en la parte superior derecha con las letras X, Y, Z. 
           p Al dar clic derecho con el mouse se puede rotar la vista, además de que si se mantiene oprimido y se presiona las teclas WASD se podrá mover por el escenario como si se tratase de un videojuego en primera persona.
-          a.boton.me-3.indicador__container.my-4(
-            :href="obtenerLink('downloads/prueba.pdf')"
-            target="_blank"
-            type="application/pdf"
-            @mouseover="mostrarIndicador = false"
-          )
+          a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
             span Ampliar imagen
-            i.fas.fa-magnifying
+            i.fas.fa-magnifying-glass
             .indicador--click(v-if="mostrarIndicador")
+          ModalA(:abrir-modal.sync="modal1")
+            .row.align-items-center
+              .col-md-12.mb-4.mb-md-0
+                figure
+                  img(src='@/assets/curso/tema1/imagen9.png')
+                .div.fondo-2.p-2
+                  p.text-small.mb-0 Nota. Identificación bordes cambio de tamaño 
         .col-md-5
           figure
             img(src='@/assets/curso/tema1/imagen9.png')
@@ -131,15 +138,17 @@
       .row.justify-content-around(titulo="<em>Zoom</em>")
         .col-md-5.mb-4.mb-md-0
           p Al girar la rueda del mouse se puede hacer zoom o acercamiento, al presionarla y mantenerla oprimida, el cursor toma forma de mano, lo que permite mover la vista del escenario, como se puede ver en la siguiente figura.
-          a.boton.me-3.indicador__container.my-4(
-            :href="obtenerLink('downloads/prueba.pdf')"
-            target="_blank"
-            type="application/pdf"
-            @mouseover="mostrarIndicador = false"
-          )
+          a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
             span Ampliar imagen
-            i.fas.fa-magnifying
+            i.fas.fa-magnifying-glass
             .indicador--click(v-if="mostrarIndicador")
+          ModalA(:abrir-modal.sync="modal1")
+            .row.align-items-center
+              .col-md-12.mb-4.mb-md-0
+                figure
+                  img(src='@/assets/curso/tema1/imagen10.png')
+                .div.fondo-2.p-2
+                  p.text-small.mb-0 Nota. Movimiento escenario - <em>zoom</em>.
         .col-md-5
           figure
             img(src='@/assets/curso/tema1/imagen10.png')
@@ -148,15 +157,17 @@
       .row.justify-content-around(titulo="Vista")
         .col-md-5.mb-4.mb-md-0
           p Si se mantiene la tecla alt + clic izquierdo se puede girar la vista en torno al punto central de la misma, como se muestra en la siguiente figura.
-          a.boton.me-3.indicador__container.my-4(
-            :href="obtenerLink('downloads/prueba.pdf')"
-            target="_blank"
-            type="application/pdf"
-            @mouseover="mostrarIndicador = false"
-          )
+          a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
             span Ampliar imagen
-            i.fas.fa-magnifying
+            i.fas.fa-magnifying-glass
             .indicador--click(v-if="mostrarIndicador")
+          ModalA(:abrir-modal.sync="modal1")
+            .row.align-items-center
+              .col-md-12.mb-4.mb-md-0
+                figure
+                  img(src='@/assets/curso/tema1/imagen11.png')
+                .div.fondo-2.p-2
+                  p.text-small.mb-0 Nota. Movimiento escenario - vista. 
         .col-md-5
           figure
             img(src='@/assets/curso/tema1/imagen11.png')
@@ -170,6 +181,7 @@ export default {
   components: {},
   data: () => ({
     // variables de vue
+    modal1: false,
   }),
   mounted() {
     this.$nextTick(() => {
