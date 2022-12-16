@@ -42,7 +42,7 @@
       .row.justify-content-around(titulo="Paso 1: <em>image</em>")
         .col-lg-6.mb-4.mb-lg-0
           p Para empezar, lo primero que se debe hacer es ir a la pestaña <em>GameObject – UI – Image</em>, como se muestra en la siguiente figura.  En la pestaña <em>hierarchy</em> aparece un nuevo elemento llamado canvas, el cual contiene el elemento <em>image</em> y el evento <em>system</em>.
-          p.mb-4 Los pasos anteriores crearán un rectángulo transparente, el cual es el canvas de la UI, así por ende este es el espacio donde se van a poner los elementos, luego se crea el botón desde <em>GameObjects – UI</em> – Boton
+          p.mb-4 Los pasos anteriores crearán un rectángulo transparente, el cual es el canvas de la UI, así por ende este es el espacio donde se van a poner los elementos, luego se crea el botón desde <em>GameObjects – UI</em> – Boton.
           .row
             .col-sm-auto
               a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
@@ -53,15 +53,15 @@
                 .row.align-items-center
                   .col-md-12.mb-4.mb-md-0
                     figure
-                      img(src='@/assets/curso/tema7/imagen3.jpg')
+                      img(src='@/assets/curso/tema7/imagen3.png')
                       figcaption Nota. Ejemplo creación interfaz.
         .col-lg-5.mb-5
           figure
-            img(src='@/assets/curso/tema7/imagen3.jpg')
+            img(src='@/assets/curso/tema7/imagen3.png')
             figcaption Nota. Ejemplo creación interfaz.
       .row.justify-content-around(titulo="Paso 2: canva")
         .col-lg-6.mb-4.mb-lg-0
-          p.mb-4 El canva en render mode se asigna a world space para que la interfaz aparezca siempre delante de los objetos que están en escena, como se muestra en la siguiente figura.
+          p.mb-4 El canva en <i>render mode</i> se asigna a <i>world space</i> para que la interfaz aparezca siempre delante de los objetos que están en escena, como se muestra en la siguiente figura.
           .row
             .col-sm-auto
               a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
@@ -72,11 +72,11 @@
                 .row.align-items-center
                   .col-md-12.mb-4.mb-md-0
                     figure
-                      img(src='@/assets/curso/tema7/imagen4.jpg')
+                      img(src='@/assets/curso/tema7/imagen4.png')
                       figcaption Nota. Ejemplo creación interfaz – <i>render mode</i>.
         .col-lg-5.mb-5
           figure
-            img(src='@/assets/curso/tema7/imagen4.jpg')
+            img(src='@/assets/curso/tema7/imagen4.png')
             figcaption Nota. Ejemplo creación interfaz – <i>render mode</i>.
       .row.justify-content-around(titulo="Paso 3: texto botón")
         .col-lg-6.mb-4.mb-lg-0

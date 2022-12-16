@@ -83,7 +83,7 @@
             p.text-small.mb-0 Nota. Opciones pestaña <em>Scene</em>.
       .row.justify-content-around(titulo="Inspector")
         .col-md-11.mb-4.mb-md-0
-          p En la parte inferior izquierda se encuentra la pestaña <em>Project</em>, que es de suma importancia, pues allí se agregarán archivos externos a <em>Unity</em> como sonidos, texturas, imágenes, entre otros; los cuales pueden anexarse simplemente arrastrándolos, dando clic en la pestaña <em>assets</em> – crear como se muestra en la siguiente figura.
+          p Al lado derecho se muestra la pestaña Inspector, en la cual se pueden modificar los atributos y propiedades de cada elemento, como se muestra en las siguientes figuras:
         .row.justify-content-around
           .col-md-5
             figure
@@ -97,7 +97,7 @@
               p.text-small.mb-0 Nota. Opciones Inspector.
       .row.justify-content-around(titulo="<em>Project</em>")
         .col-md-11.mb-4.mb-md-0
-          p Pestaña que permite configurar el escenario del videojuego, donde van a ir ubicados los elementos del mismo. Dichos elementos estarán listados en la pestaña de la izquierda llamada <em>hierarchy. Unity</em> por defecto ubica dos elementos, cámara (<em>Main Camera</em>) e iluminación (<em>Directional Light</em>) como se muestra en la siguiente figura.
+          p En la parte inferior izquierda se encuentra la pestaña <i>Project</i>, que es de suma importancia, pues allí se agregarán archivos externos a <i>Unity</i> como sonidos, texturas, imágenes, entre otros; los cuales pueden anexarse simplemente arrastrándolos, dando clic en la pestaña <i>assets</i> - crear como se muestra en la siguiente figura.
         .row.justify-content-around
           .col-md-5
             figure

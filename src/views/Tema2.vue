@@ -142,7 +142,7 @@
       img(src='@/assets/curso/tema2/imagen11.svg', alt='Ventana <em>Scene View</em>')
       figcaption Elementos ventana <em>Scene View</em>.
     p(data-aos="fade-down-left") Los iconos de la sección navegación permiten desplazarse por la escena, y los de la sección transformación permiten rotar, mover  y escalar los objetos en la escena.
-    p.mb-4(data-aos="fade-down-left") La pestaña Shaded permite modificar la manera en que se visualiza el escenario, se puede cambiar a una vista alambrada para observar los polígonos que componen los elementos, como se muestra a continuación:
+    p.mb-4(data-aos="fade-down-left") La pestaña <em>Shaded</em> permite modificar la manera en que se visualiza el escenario, se puede cambiar a una vista alambrada para observar los polígonos que componen los elementos, como se muestra a continuación:
     .titulo-sexto.color-acento-contenido.mb-4(data-aos="fade-down-right")
       h5 Figura 7. 
       span <em>Shaded</em>
@@ -195,7 +195,7 @@
         h2.mb-0.text-white Tipos de archivos
     .row.justify-content-center.mb-4
       .col-lg-5.col-md-12.mb-4.mb-lg-0(data-aos="fade-down-right")
-        p.mb-4 A través de la ventana Project se crean las carpetas para organizar el proyecto como se muestra a continuación:
+        p.mb-4 A través de la ventana <i>Project</i> se crean las carpetas para organizar el proyecto como se muestra a continuación:
         .titulo-sexto.color-acento-contenido.mb-4(data-aos="fade-down-right")
           h5 Figura 10. 
           span Tipos de archivos.
