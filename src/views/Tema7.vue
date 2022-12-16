@@ -64,11 +64,11 @@
           p.mb-4 El canva en <i>render mode</i> se asigna a <i>world space</i> para que la interfaz aparezca siempre delante de los objetos que están en escena, como se muestra en la siguiente figura.
           .row
             .col-sm-auto
-              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
+              a.boton.color-acento-botones.indicador__container(@click="modal2 = true")
                 span Ampliar imagen
                 i.fas.fa-magnifying-glass
                 .indicador--click(v-if="mostrarIndicador")
-              ModalA(:abrir-modal.sync="modal1")
+              ModalA(:abrir-modal.sync="modal2")
                 .row.align-items-center
                   .col-md-12.mb-4.mb-md-0
                     figure
@@ -83,11 +83,11 @@
           p.mb-4 Seleccionando en hierachi el elemento botón, se selecciona el Inspector y se agrega el texto que se quiere que aparezca en el botón, en este caso será el de comenzar juego, como se muestra a continuación:
           .row
             .col-sm-auto
-              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
+              a.boton.color-acento-botones.indicador__container(@click="modal3 = true")
                 span Ampliar imagen
                 i.fas.fa-magnifying-glass
                 .indicador--click(v-if="mostrarIndicador")
-              ModalA(:abrir-modal.sync="modal1")
+              ModalA(:abrir-modal.sync="modal3")
                 .row.align-items-center
                   .col-md-12.mb-4.mb-md-0
                     figure
@@ -102,11 +102,11 @@
           p.mb-4 Para poner una barra de vida se crea el objeto <em>Slider</em> accediendo a la barra de menú principal <em>GameObject - UI - Slider</em>. Una vez puesto y seleccionado aparecerá una barra <em>Slider</em>, se despliega y tendrá <em>background</em>, luego se selecciona el Inspector, se da clic en <em>image – color</em> y se asigna rojo, como se muestra en la siguiente figura.
           .row
             .col-sm-auto
-              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
+              a.boton.color-acento-botones.indicador__container(@click="modal4 = true")
                 span Ampliar imagen
                 i.fas.fa-magnifying-glass
                 .indicador--click(v-if="mostrarIndicador")
-              ModalA(:abrir-modal.sync="modal1")
+              ModalA(:abrir-modal.sync="modal4")
                 .row.align-items-center
                   .col-md-12.mb-4.mb-md-0
                     figure
@@ -121,11 +121,11 @@
           p.mb-4 Luego, en el Slider se despliega <em>fill area – fill</em> y se cambia el color a verde para mostrar la barra de vida cuando está llena, como se muestra en la siguiente figura.
           .row
             .col-sm-auto
-              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
+              a.boton.color-acento-botones.indicador__container(@click="modal5 = true")
                 span Ampliar imagen
                 i.fas.fa-magnifying-glass
                 .indicador--click(v-if="mostrarIndicador")
-              ModalA(:abrir-modal.sync="modal1")
+              ModalA(:abrir-modal.sync="modal5")
                 .row.align-items-center
                   .col-md-12.mb-4.mb-md-0
                     figure
@@ -140,11 +140,11 @@
           p.mb-4 Ahora, en la tercera opción <em>handle</em> slide area se despliega y en <em>handle</em> se agrega un icono en file <em>source</em> para la barra de vida, como se muestra a continuación:
           .row
             .col-sm-auto
-              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
+              a.boton.color-acento-botones.indicador__container(@click="modal6 = true")
                 span Ampliar imagen
                 i.fas.fa-magnifying-glass
                 .indicador--click(v-if="mostrarIndicador")
-              ModalA(:abrir-modal.sync="modal1")
+              ModalA(:abrir-modal.sync="modal6")
                 .row.align-items-center
                   .col-md-12.mb-4.mb-md-0
                     figure
@@ -159,11 +159,11 @@
           p.mb-4 Ahora para ver el <em>Slider</em> en funcionamiento se puede volver a <em>Slider</em> y en Inspector aumentar el valor para ver cómo se va llenando la barra de vida, como se muestra a continuación:
           .row
             .col-sm-auto
-              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
+              a.boton.color-acento-botones.indicador__container(@click="modal7 = true")
                 span Ampliar imagen
                 i.fas.fa-magnifying-glass
                 .indicador--click(v-if="mostrarIndicador")
-              ModalA(:abrir-modal.sync="modal1")
+              ModalA(:abrir-modal.sync="modal7")
                 .row.align-items-center
                   .col-md-12.mb-4.mb-md-0
                     figure
@@ -178,11 +178,11 @@
           p.mb-4 Finalmente, se va a <em>GameObject – UI - Text</em> para crear el título que acompañará la interfaz, como lo muestra la figura a continuación:
           .row
             .col-sm-auto
-              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
+              a.boton.color-acento-botones.indicador__container(@click="modal8 = true")
                 span Ampliar imagen
                 i.fas.fa-magnifying-glass
                 .indicador--click(v-if="mostrarIndicador")
-              ModalA(:abrir-modal.sync="modal1")
+              ModalA(:abrir-modal.sync="modal8")
                 .row.align-items-center
                   .col-md-12.mb-4.mb-md-0
                     figure
@@ -197,11 +197,11 @@
           p.mb-4 Con esto se tienen listos los elementos de la interfaz para iniciar el juego, como se ilustra en la siguiente figura:
           .row
             .col-sm-auto
-              a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
+              a.boton.color-acento-botones.indicador__container(@click="modal9 = true")
                 span Ampliar imagen
                 i.fas.fa-magnifying-glass
                 .indicador--click(v-if="mostrarIndicador")
-              ModalA(:abrir-modal.sync="modal1")
+              ModalA(:abrir-modal.sync="modal9")
                 .row.align-items-center
                   .col-md-12.mb-4.mb-md-0
                     figure
@@ -220,6 +220,14 @@ export default {
   data: () => ({
     // variables de vue
     modal1: false,
+    modal2: false,
+    modal3: false,
+    modal4: false,
+    modal5: false,
+    modal6: false,
+    modal7: false,
+    modal8: false,
+    modal9: false,
   }),
   mounted() {
     this.$nextTick(() => {
